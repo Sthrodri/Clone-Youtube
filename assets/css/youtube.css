@@ -1,0 +1,82 @@
+@import url('reset.css');
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 12px 24px;
+    justify-content: space-between; /* Distribui os grupos nas extremidades */
+}
+
+#menu {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+}
+
+#logo-youtube {
+    width: 90px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+#foto-perfil {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: url(assets/images/foto.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.form-de-pesquisa {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Faz o botão ficar no final do formulário */
+    max-width: 400px;      /* Diminui a largura máxima */
+    height: 40px;          /* Diminui a altura */
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    padding-right: 0;
+    padding-left: 0;
+    opacity: 1;            /* Mantém opacidade */
+}
+
+.form-de-pesquisa input {
+    flex: 1;
+    border: none;
+    padding: 8px 8px;      /* Padding menor */
+    font-size: 15px;       /* Fonte um pouco menor */
+    outline: none;
+    background: transparent;
+    height: 100%;          /* Ocupa toda a altura do form */
+}
+
+.form-de-pesquisa button {
+    width: 57px;           /* Define largura menor para o botão */
+    height: 40px;          /* Mantém altura igual ao form */
+    border-width: 1px;
+    border-left: 1px solid #ccc;
+    background: #f8f8f8;
+    padding: 0;            /* Remove padding extra */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+#botao {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border: none;
+    background: none;
+    margin-left: auto;   /* Empurra o grupo para o lado direito */
+    margin-right: 0;     /* Remove espaçamento à direita */
+}
