@@ -6,25 +6,23 @@ header {
     width: 100%;
     gap: 20px;
     padding: 12px 24px;
-    justify-content: space-between; /* Distribui os grupos nas extremidades */
 }
 
 #menu {
-    width: 24px;
-    height: 24px;
+    width: 40px;
     border: none;
     background: none;
 }
 
 #logo-youtube {
-    width: 90px;
-    height: 20px;
+    width: 100px;
     box-sizing: border-box;
+    margin-right: 20px;
 }
 
 #foto-perfil {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: url(assets/images/foto.jpg) no-repeat center center;
     background-size: cover;
@@ -35,16 +33,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Faz o botão ficar no final do formulário */
-    max-width: 400px;      /* Diminui a largura máxima */
-    height: 40px;          /* Diminui a altura */
+    max-width: 700px;      /* Diminui a largura máxima */
+    height: 40px;     /* Diminui a altura */
     margin: 0 auto;
     background: #fff;
     border-radius: 2px;
     border: 1px solid #ccc;
     overflow: hidden;
     padding-right: 0;
-    padding-left: 0;
-    opacity: 1;            /* Mantém opacidade */
+    padding-left: 2px; /* Adiciona padding à esquerda */
+    opacity: 1;
+    margin-right: 10px; /* Espaçamento à direita */
 }
 
 .form-de-pesquisa input {
@@ -60,8 +59,7 @@ header {
 .form-de-pesquisa button {
     width: 57px;           /* Define largura menor para o botão */
     height: 40px;          /* Mantém altura igual ao form */
-    border-width: 1px;
-    border-left: 1px solid #ccc;
+    border: 1px solid #ccc;
     background: #f8f8f8;
     padding: 0;            /* Remove padding extra */
     cursor: pointer;
@@ -75,8 +73,80 @@ header {
     display: flex;
     align-items: center;
     gap: 24px;
+    background: none;
+    border: none; /* Adicione esta linha */
+    margin-left: auto;   /* Empurra o grupo para o lado direito */
+    margin-right: 10px;     /* Remove espaçamento à direita */
+}
+
+/* main do site */
+
+main {
+    height: 537px;
+    width: 952px;
+}
+
+#video {
+    margin: 30px 100px;
+    width: 952px;
+    height: 537px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 952px;
+}
+
+p {
+    font-size: 18px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 600px;
+    font-size: 15px;
+}
+
+.info-video {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.canal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.canal {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.inscritos {
+    font-size: 14px;
+    color: #606060;
+}
+
+/* Adicione regras para os novos botões da área de vídeo */
+.btn-inscrever,
+.btn-dislike,
+.btn-compartilhar,
+.btn-download {
     border: none;
     background: none;
-    margin-left: auto;   /* Empurra o grupo para o lado direito */
-    margin-right: 0;     /* Remove espaçamento à direita */
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Se quiser manter apenas o botão de inscrever com estilo especial */
+.btn-inscrever {
+    background: #ff0000 !important;
+    color: white !important;
+    border: none;
 }
